@@ -54,8 +54,10 @@ public class EndActivity extends AppCompatActivity {
                 mediaPlayer = MediaPlayer.create(EndActivity.this, R.raw.notmatch);
                 int result = audioManager.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-                    // Start playback
-                    mediaPlayer.start();
+                    if (!mediaPlayer.isPlaying()) {
+                        // Start playback
+                        mediaPlayer.start();
+                    }
                 }
 
             }
