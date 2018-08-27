@@ -21,6 +21,7 @@ public class EndActivity extends AppCompatActivity {
     AudioManager audioManager;
     AudioManager.OnAudioFocusChangeListener afChangeListener;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
