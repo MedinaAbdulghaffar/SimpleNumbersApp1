@@ -1,9 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EndActivity">
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    tools:context=".EndActivity"
+    >
 
-</android.support.constraint.ConstraintLayout>
+
+    <!--first choise-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/first_ch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="33dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/one"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+    <!--second choice-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+
+        >
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/second_ch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="101dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="37dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+         android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:src="@drawable/five" />
+
+
+    </LinearLayout>
+    <!--third choice-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        >
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/third_ch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+             android:layout_marginLeft="98dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="31dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="123dp"
+            android:layout_marginRight="123dp"
+            android:src="@drawable/seven" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="15dp">
+        <Button
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/learning_phase_b"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/learning_phace"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/play_sound_b"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/play_sound_again"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</LinearLayout>

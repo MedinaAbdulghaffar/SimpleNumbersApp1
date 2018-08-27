@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">NumbersApp</string>
+    <string name="test">Test</string>
+    <string name="play_sound_again">play sound again</string>
+    <string name="learning_phace">learning phace</string>
 </resources>
