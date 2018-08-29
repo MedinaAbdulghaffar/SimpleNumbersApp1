@@ -78,6 +78,7 @@ public class EndActivity extends AppCompatActivity {
                 int result = audioManager.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // Start playback
+                   if(firstCheckBox.isChecked())
                     mediaPlayer.start();
                 }
             }
@@ -90,7 +91,8 @@ public class EndActivity extends AppCompatActivity {
                 int result = audioManager.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // Start playback
-                    mediaPlayer.start();
+                    if(secondCheckBox.isChecked())
+                        mediaPlayer.start();
                 }            }
         });
         thirdCheckBox.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +102,8 @@ public class EndActivity extends AppCompatActivity {
                 int result = audioManager.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
                 if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
                     // Start playback
-                    mediaPlayer.start();
+                    if(thirdCheckBox.isChecked())
+                        mediaPlayer.start();
                 }            }
         });
     }
